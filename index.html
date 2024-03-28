@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* grid-gap: 20px; */
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 2px solid black;
+        }
+        .grid-item img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        .grid-item p {
+            margin-left: 310px;
+            margin-top: -295px;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="./Pong"><img src="./Pong/cover.png"></a>
+            <p>This is just a simple game made with my new game engine CanvasJS. All the games use just plain Vanila Javascript, HTML and Canvas.</p>
+        </div>
+        <div class="grid-item">
+            <a href="your_page.html"><img src="image2.jpg"></a>
+        </div>
+        <div class="grid-item">
+            <a href="your_page.html"><img src="image3.jpg"></a>
+        </div>
+        <!-- Add more grid-items as needed -->
+    </div>
+</body>
+</html>
